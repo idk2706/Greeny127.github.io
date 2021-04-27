@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding-top: 12%;
+    padding-bottom: 8%;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.subheading {
+    font-size: 2.5em;
+    animation: hover 2s infinite alternate;
+}
+
+.about-me{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.about-me h1 {
+    font-size: 3em;
+}
+
+.about-me p {
+    font-size: 1.5em;
+    padding: 0 7%;
+}
+
+.languages-container {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.languages-list li{
+    list-style-type: none;
+    display: inline;
+}
+
+.languages-list img {
+    width: 9%;
+    transition: width 0.7s;
+    padding-right: 5%;
+}
+
+.languages-container h1{
+    padding-right: 1.5%;
+}
+
+.languages-list li:last-child {
+    margin-right: 0%;
+   }
+
+.languages-list img:hover {
+    width: 13%;
+    transition: width 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.find-me-container h1{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.github-link {
+    background-image: url(../images/github-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+
+.chess-link {
+    background-image: url(../images/chess-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+
+.roblox-link {
+    background-image: url(../images/roblox-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
