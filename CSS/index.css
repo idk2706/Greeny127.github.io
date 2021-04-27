@@ -42,7 +42,156 @@ body {
 
 .languages-container {
     margin-top: 10%;
+    text-align: center;@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
     text-align: center;
+    padding-top: 12%;
+    padding-bottom: 8%;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.subheading {
+    padding-top: 3%;
+    font-size: 2.5em;
+    animation: hover 2s infinite alternate;
+}
+
+.about-me{
+    text-align: center;
+    padding-top: 4%;
+}
+
+.about-me h1 {
+    font-size: 3em;
+    padding-bottom: 1%;
+}
+
+.about-me p {
+    font-size: 1.5em;
+    padding: 0 5%;
+}
+
+.languages-container {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.languages-list li{
+    list-style-type: none;
+    display: inline;
+}
+
+.languages-list img {
+    width: 9%;
+    transition: width 0.7s;
+    padding-right: 5%;
+}
+
+.languages-container h1{
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.languages-container ul {
+    padding-left: 2%;
+}
+
+.languages-list li:last-child {
+    margin-right: 0%;
+   }
+
+.languages-list img:hover {
+    width: 13%;
+    transition: width 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.find-me-container h1{
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.github-link a {
+    font-size: 1.5em;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.chess-link a {
+    font-size: 1.5em;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.roblox-link a {
+    font-size: 1.5em;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.github-link {
+    background-image: url(../images/github-background.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    padding-bottom: 20%;
+}
+
+.chess-link {
+    background-image: url(../images/chess-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    padding-bottom: 20%;
+}
+
+.roblox-link {
+    background-image: url(../images/roblox-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    padding-bottom: 20%;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
 }
 
 .languages-list li{
