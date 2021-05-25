@@ -204,6 +204,94 @@ html,body {
     animation: textColor 3s alternate infinite;
 }
 
+.languages {
+    background-color: rgb(15, 15, 15);
+}
+
+.languages-title {
+    position: relative;
+    text-align: center;
+    color: #02AF02;
+    font-size: 7vh;
+    padding: 17% 0%;
+}
+
+.languages-list {
+    text-align: center;
+}
+
+.languages-list li{
+    display: inline;
+    text-align: center;
+    padding: 0 2vh;
+}
+
+.python-icon {
+    position: relative;
+    bottom: 30vh;
+    height: 25vh;
+    transition: height 0.7s
+}
+
+.python-icon:hover {
+    height: 30vh;
+    transition: height 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.cpp-icon {
+    position: relative;
+    bottom: 27vh;
+    height: 30vh;
+    right: 3vh;
+    transition: height 0.7s
+}
+
+.cpp-icon:hover {
+    height: 35vh;
+    transition: height 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.js-icon {
+    position: relative;
+    bottom: 32vh;
+    height: 20vh;
+    transition: height 0.7s
+}
+
+.js-icon:hover {
+    height: 25vh;
+    transition: height 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.julia-icon {
+    position: relative;
+    bottom: 30vh;
+    height: 25vh;
+    transition: height 0.7s
+}
+
+.julia-icon:hover {
+    height: 30vh;
+    transition: height 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.r-icon {
+    position: relative;
+    bottom: 30vh;
+    height: 25vh;
+    transition: height 0.7s
+}
+
+.r-icon:hover {
+    height: 30vh;
+    transition: height 0.7s;
+    animation-fill-mode: forwards;
+}
+
 @media only screen and (orientation:portrait) and (max-width: 1050px) {
     /* For mobile phones: */
     #logo {
@@ -219,6 +307,20 @@ html,body {
 
     .navbar ul li {
         display: inline;
-        padding: 0 2vh;
+        padding: 0 3vh;
     }
+
+    .languages {
+        padding-bottom: 10vh;
+    }
+
+    .languages-title {
+        top: 25vh;
+        font-size: 10vw;
+    }
+
+    .list-icon {
+        top: 15vh;
+    }
+
   }
