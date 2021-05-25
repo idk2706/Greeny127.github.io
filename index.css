@@ -7,15 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+html,body {
     width: 100;
     height: 100vh;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);  
     overflow-x: hidden;
-}   
+}
 
 .HomeTitleContainer {
-    text-align: center;
+    text-align: center;    
 }
 
 #logo {
@@ -154,7 +154,7 @@ body {
 
 .project1 span {
     color: #009100;
-    animation: textColor 1s alternate infinite;
+    animation: textColor 3s alternate infinite;
 }
 
 @keyframes textColor {
@@ -173,7 +173,7 @@ body {
 
 .project2 span {
     color: #009100;
-    animation: textColor 1s alternate infinite;
+    animation: textColor 3s alternate infinite;
 }
 
 .project3 {
@@ -187,7 +187,7 @@ body {
 
 .project3 span {
     color: #009100;
-    animation: textColor 1s alternate infinite;
+    animation: textColor 3s alternate infinite;
 }
 
 .project4 {
@@ -201,5 +201,24 @@ body {
 
 .project4 span {
     color: #009100;
-    animation: textColor 1s alternate infinite;
+    animation: textColor 3s alternate infinite;
 }
+
+@media only screen and (orientation:portrait) and (max-width: 1050px) {
+    /* For mobile phones: */
+    #logo {
+        height: 10em;
+        left: 0%;
+        margin-top: 13%;
+    }
+
+    .logo-prefix {
+        top: 2.4em;
+        left: 0%;
+    }
+
+    .navbar ul li {
+        display: inline;
+        padding: 0 2vh;
+    }
+  }
