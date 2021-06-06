@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Title</title>
+    <title>My first looks on Julia</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
  
@@ -22,6 +22,18 @@
             background-color: rgb(26, 26, 26);  
             overflow-x: hidden;
             text-align: center;
+        }
+        code, pre {
+            text-align: left;
+            font-family: 'Consolas';
+        }
+
+        pre {
+            text-align: left;
+            background-color:rgb(20, 20, 20);
+            border: 1px solid rgb(43, 43, 43);
+            background-clip: padding-box;
+            margin: 0 2%;
         }
  
         .navbar {
@@ -54,6 +66,12 @@
             font-size: 5vh;
         }
 
+        .post {
+            font-size: 3.5vh;
+            text-align: left;
+            padding: 0 2%;
+        }
+
         #post {
             font-size: 3.5vh;
             text-align: left;
@@ -79,23 +97,44 @@
 
     <div class="container">
         <div class="title-container">
-            <h1 class="title">Blog Title</h1>
-            <h2 class="author">Author</h2>
+            <h1 class="title">My First looks on Julia</h1>
+            <h2 class="author">Sohan</h2>
         </div>
 
         <div>
             <p id="post">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-                sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-                recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-                minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+                You ever heard of Julia? No, not your neighbor, but the <i>language</i> Julia. Created in 2009, it recently started gaining popularity in the ML
+                and Data Science field. Granted, it was built to be as fast as C++ and as friendly as python. A tool for the scientific community. It was <b>destined</b>!
+                <br><br>
+
+                <span>
+                    <code>
+                        <pre>
+
+    function add(a, b)
+        return a+b
+    end
+
+    print(add(1, 2))
+                        </pre>      
+                    </code>
+                </span>
+                <br>
+            </p>
+
+            <p class="post">
+                With the above snippet, you can see the syntax is quiet similar to python's syntax and I'm neither happy nor sad. Although, 
+                I would love to see some good old C++ syntax!
+                <br><br>
+
+                It's speed is something to be reckoned with! I mean, look at this benchmark test done with Julia
+
+                <img src="benchmarks.svg" alt="">
+                <br>
+
+                It's <i>really</i> built for mathematical speed. It's also general-purpose, it's got tons of builtin libraires for almost anything, and the community
+                is developing even more modules and libraires to back Julia up. And, if you want to get started in ML with Julia, take a look at Flux.jl, it's 
+                amazing!
             </p>
         </div>
     </div>

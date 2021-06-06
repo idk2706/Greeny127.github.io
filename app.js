@@ -1,6 +1,6 @@
 var previewcontent = $( "#content" ).load("/posts/1/1.html p#post", function(){
     $(".img").remove();
-    let text = $("#post").clone().children().remove().end().text();
+    let text = $("#post").clone().remove().end().text();
     text = text.slice(0, 400);
     text += "...";
     $("#post").text(text);
